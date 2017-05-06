@@ -1,0 +1,17 @@
+/*
+* @Author: Mayuko
+* @Date:   2017-01-16 12:30:09
+* @Last Modified by:   Mayuko
+* @Last Modified time: 2017-01-16 13:24:40
+*/
+html{
+	font-family: "微软雅黑", Calibri, Trebuchet, sans-serif;
+}
+.w{
+	margin:10px 0;
+	height: 80px;
+}
+img{
+	width:80px;
+	vertical-align:middle;
+}

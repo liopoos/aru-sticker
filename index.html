@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Aru</title>
+</head>
+<body>
+	<div class="container">
+		<p>
+			<h1>
+			Aru表情
+			</h1>
+			<span><a href="http://weibo.com/silenthiker?refer_flag=1001030001_&nick=AS%E5%8E%9F%E6%96%87%E5%A6%82%E6%AD%A4">由AS原文如此绘制</a></span>
+		</p>
+		<div class="row">
+			<div class="loading">
+				正在加载...
+			</div>
+			<div class="add">
+
+			</div>
+		</div>
+		<footer id="f">
+			
+		</footer>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$.ajax({
+				type : "GET",
+				url : "load.php",
+				dataType : 'html',
+				error : function(result) {
+				},
+				success : function(result) {
+					
+					$('.add').html(result);
+					$('.loading').remove();
+					$('#f').html("共281个");
+				} 
+			});
+		})
+	</script>
+</body>
+</html>
